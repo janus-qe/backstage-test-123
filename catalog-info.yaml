@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-test-123
+  description: backstage-test-123
+  annotations:
+    github.com/project-slug: janus-qe/backstage-test-123
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/createdAt: 6/26/2024, 5:17:18 AM
+    custom.io/other: value
+  labels:
+    other: test-label
+spec:
+  type: website
+  lifecycle: experimental
+  owner: group:janus-qe/maintainers
+  scaffoldedFrom: template:default/create-react-app-template-with-timestamp-entityref
